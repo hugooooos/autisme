@@ -166,3 +166,17 @@
   .social-icons img:hover {
     transform: scale(1.2);
   }
+
+  .image-container {
+    width: 200px; /* Ajustez la taille de la photo selon vos besoins */
+    height: 200px; /* Ajustez la taille de la photo selon vos besoins */
+    overflow: hidden;
+    border-radius: 50%; /* Pour créer une forme circulaire */
+  }
+  
+  
+  .image-container img {
+    width: 100%; /* Ajustez la largeur de l'image pour remplir le conteneur */
+    height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement */
+    display: block; /* Assure que l'image est positionnée correctement */
+  }
