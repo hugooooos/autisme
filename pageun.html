@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fond d'Écran Responsive en Parallaxe</title>
+    <link rel="stylesheet" href="pageun.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+     @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .parallax {
+            /* Le fond fixe */
+            background-image: url(https://wallpaperswide.com/download/shrek_shrek_forever_after_movie-wallpaper-5120x3200.jpg);
+            /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+            padding: 70px;
+            height: 100vh;
+            /* La section prend toute la hauteur de la fenêtre */
+            background-attachment: fixed;
+            /* Fixe le fond */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .content {
+            height: 100vh;
+            background-color: #6d4700e0;
+            /* Couleur de fond du contenu */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            border-radius: 10px
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1"><i class="fas fa-user icon"></i>Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2"><i class="fas fa-briefcase icon"></i>Expériences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3"><i class="fas fa-envelope icon"></i>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="section1" class="section">
+    <div class="content">
+        <div class="metier">
+          <div class="username">HUSANCHE<span class="spaced-line"></span></div>
+           <div class="metiernom"> Développeur UX<span class="spaced-line"></span></div>
+        </div>
+        <br>
+        <p></p>
+        <p></p>
+    </div>
+</section>
+
+
+    <div class="parallax"></div>
+    <section id="section2" class="section">
+    <div class="content" >
+        <div class="skills-container">
+            <h2>Compétences</h2>
+            <ul class="skills-list">
+              <li>Shrek 1 (2001)</li>
+              <li>Shrek 2 (2004)</li>
+              <li>Shrek 3 (2007)</li>
+              <li>Shrek 4 (2010) </li>
+              <li>Shrek 5 (2025)</li>
+            </ul>
+          </div>
+          <article class="experience">
+            <header>
+              <h2>Ogre</h2>
+              <time>Janvier 1969 - Présent</time>
+            </header>
+            <section>
+              <h3>Résumé</h3>
+              <p>Activités très complexes</p>
+              <ul>
+                <li>Entretien du marais et de la foret</li>
+                <li>Entretin et gardiennage d'un âne</li>
+                <li>Codage en HTML</li>
+              </ul>
+            </section>
+          </article>
+    </div>
+
+
+    <div class="parallax"></div>
+    <div class="content">
+        <div class="contact">
+            <h2>Contactez-moi</h2>
+            <p>N'hésitez pas à me contacter sur les réseaux sociaux :</p>
+            <div class="social-icons">
+                <section id="section3" class="section">
+              <a href="https://www.facebook.com/?locale=fr_FR"><img src="https://img.icons8.com/?size=100&id=0If0tbsxJRhB&format=png&color=000000" alt="Facebook"></a>
+              <a href="https://x.com/?lang=fr"><img src="https://img.icons8.com/?size=100&id=N8WHFPwhBzk2&format=png&color=000000" alt="Twitter"></a>
+              <a href="https://fr.linkedin.com/"><img src="https://img.icons8.com/?size=100&id=CWnQDCef7qg0&format=png&color=000000" alt="LinkedIn"></a>
+            </div>
+          </div>
+            
+        
+    </div>
+</section>
+</body>
+
+</html>

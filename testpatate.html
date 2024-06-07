@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sommaire des CVs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="testpatate.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            background-image: linear-gradient(rgba(138, 170, 229, 0.26),
+                    rgba(86, 192, 224, 0.45)), url(https://images.adsttc.com/media/images/574e/3de7/e58e/ce8b/0600/009f/slideshow/INEDIT_42_1113_08.jpg?);
+            /* Remplacez 'background.jpg' par le chemin de votre image de fond */
+            height: 100%;
+            opacity: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            color: #ecf0f1;
+            z-index: 1;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .dropdown-menu a {
+            color: #ecf0f1;
+        }
+
+        .btn {
+            font-size: 1.5rem;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 50px;
+            background-color: #3498db;
+            color: #ecf0f1;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        h1 {
+            font-size: 90px;
+            color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            padding-top: 250px;
+            text-shadow: 2px 1px rgb((255, 161, 98));
+            font-family: "Kosugi Maru", sans-serif;
+            font-weight: bolder;
+            font-style: normal;
+            z-index: 2;
+        }
+
+        h1 span {
+            display: inline-block;
+            animation: wave 6s infinite;
+            transform-origin: bottom;
+        }
+
+        h1 span:nth-child(odd) {
+            animation-delay: 0.7s;
+        }
+
+        h1 span:nth-child(even) {
+            animation-delay: 0.5s;
+        }
+
+        @keyframes wave {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .number {
+            position: absolute;
+            top: 0;
+            font-size: 2em;
+            color: #ffffff;
+            animation: fall linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes fall {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(94vh);
+            }
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+    </style>
+</head>
+
+<body>
+
+
+    <div class="bg">
+        <script>
+            const body = document.body;
+            const createNumber = () => {
+                const number = document.createElement('div');
+                number.classList.add('number');
+                number.textContent = Math.floor(42); // Génère un chiffre aléatoire entre 0 et 9
+                number.style.left = Math.random() * 95 + 'vw'; // Positionnement horizontal aléatoire
+                number.style.animationDuration = (Math.random() * 3 + 2) + 's'; // Durée d'animation aléatoire entre 2s et 5s
+                body.appendChild(number);
+
+                // Supprime l'élément après l'animation pour éviter la surcharge du DOM
+                number.addEventListener('animationend', () => {
+                    number.remove();
+                });
+            };
+
+            // Crée un nouveau chiffre toutes les 500ms
+            setInterval(createNumber, 1200);
+        </script>
+        <div class="calque">
+            <div class="container">
+                <h1><span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+                    <span>É</span><span>t</span><span>u</span><span>d</span><span>i</span><span>a</span><span>n</span><span>t</span><span>s</span>
+                    <div class="quarante"><span>4</span><span>2</span></div>
+                </h1>
+                <div class="dropdown">
+                    <button class="dropdown-button">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="file:///C:/Users/Admin/discovery_piscine/rush/pageun.html">Hugo</a>
+                        <a href=":m">f</a>
+                        <a href="">g 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

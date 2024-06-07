@@ -1,0 +1,168 @@
+
+.navbar {
+    overflow: hidden;
+    padding: 1rem 2rem;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(5, 99, 13), rgb(228, 187, 3), rgb(90, 77, 4));
+    position: fixed;
+}
+.navbar-nav .nav-link {
+    color: #29768a;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.navbar-nav .nav-link:hover {
+    color: #3498db;
+}
+.spaced-line {
+    display: block;
+    margin-top: 20px; /* Ajustez cette valeur pour changer l'espacement */
+  }
+
+.metier {
+    color: black;
+    font-weight: bold;
+    font-family: "Kosugi Maru", sans-serif;
+    text-align: center;
+}
+
+.metiernom {
+    font-size: 90px;
+}
+
+.username {
+    font-size: 65px;
+}
+
+.kosugi-maru-regular {
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.skills-container {
+    background-color: #206405;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .skills-container h2 {
+    text-align: center;
+    color: #c29c32;
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li {
+    background: #247504;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .skills-list li:hover {
+    background: #88560a;
+  }
+  
+  .skills-list li i {
+    margin-right: 10px;
+    color: #4e6d05;
+  }
+
+  .experience {
+    background-color: #93aa0e;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .experience header {
+    margin-bottom: 10px;
+  }
+  
+  .experience header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .experience header time {
+    color: #666;
+  }
+  
+  .experience section h3 {
+    color: #333;
+  }
+  
+  .experience section p {
+    margin-bottom: 10px;
+  }
+  
+  .experience section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .experience section ul li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .experience section ul li:before {
+    content: "\2022"; /* Utilisation d'un point pour les puces */
+    position: absolute;
+    left: 0;
+    color: #666;
+  }
+
+  .contact {
+    background-color: #b2c415;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact h2 {
+    color: #704343;
+    font-size: 24px;
+  }
+  
+  .contact p {
+    color: #1ab315;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
